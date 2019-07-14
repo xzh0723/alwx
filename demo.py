@@ -16,7 +16,7 @@ from bs4 import BeautifulSoup
 from requests import Session
 import execjs
 
-class book_downloader:
+class BookDownloader:
 
     def __init__(self):
         self.bookId = input('请输入小说Id>> \n')
@@ -122,5 +122,5 @@ class book_downloader:
                 break
 
 if __name__ == '__main__':
-    spider = book_downloader()
+    spider = BookDownloader()
     spider.run()
